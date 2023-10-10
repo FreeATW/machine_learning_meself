@@ -7,12 +7,12 @@ from import_statics import file2matrix
 
 dating_date, dating_labels = file2matrix("knn_example_dating/dating.txt")
 
-'''
+
 fig = plt.figure()
 ax = fig.add_subplot(111)
 ax.scatter(dating_date[:,0], dating_date[:,1], 15.0* np.array(dating_labels), 15.0*np.array(dating_labels))
 plt.show()
-'''
+
 
 def norm_datefun(dateset):
     min_vals = dateset.min(0)
