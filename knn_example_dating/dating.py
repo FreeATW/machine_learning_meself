@@ -44,8 +44,7 @@ def classify_date(inx, dateset, labels, k):
     sorted_class_count = sorted(class_count.items(), key = operator.itemgetter(1),reverse = True)
     return sorted_class_count[0][0]
 
-'''
+
 test = np.array([2000,50,20])
 label = classify_date(test, dating_date,dating_labels,2)
 print(label)
-'''
